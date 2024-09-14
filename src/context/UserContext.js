@@ -48,7 +48,7 @@ export const UserProvider = ({ children }) => {
 
     try {
       toast.loading("processing...");
-      const response = await fetch("1://jsonplaceholder.typicode.com/users", {
+      const response = await fetch("https://jsonplaceholder.typicode.com/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json; charset=UTF-8",
